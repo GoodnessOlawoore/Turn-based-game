@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Turn-based board battle game in Javascript and jQuery">
+    
+    <title> Project 6 </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+ 
+<body>
+    <header>
+        <div class="name">
+            OC - PROJECT 6         
+        </div>
+    </header>
+    <div class="container">
+        <div class="player-container active" id="smookey">
+            <div class="player">
+                <h2 class="name-1"></h2>
+                <div class="player-img"> <img src="image/player-1.png" alt="">
+                </div>
+            </div>
+            <div class="weapon">
+                <h2>Point: <span id="life-1"></span></h2>
+                <div class="fruit-1"></div>
+                <h3>Strength: <span class="strength-1"></span></h3>
+                <div class="turn-1"></div>
+                <div class="buttons">
+                    <button class="btn-attack-1">Attack</button>
+                    <button class="btn-defend-1">Block Attack</button>
+                </div>
+            </div>
+        </div>
+        <section id="intro">
+            <div class="intro-texts">
+                <h2>Welcome to my Turn Based Game <br>PROJECT - 6</h2>
+                <p>Game Ethics:</p>
+                <ol>
+                    <li>You can can move 4 spaces horizontally or vertically.</li>
+                    <p><li>You earn more strength by collecting the fruits.</li></p>
+                    <p><li>Fruits have different values, try to choose the strongest one:</li></p>
+                    
+                </ol>
+               
+            </div>
+               <center> <button id="start" onclick="startGame(this)">Start game</button></center>
+        </section>
+        <div id="board">
+        </div>
+        <div class="player-container" id="panda">
+            <div class="player">
+                <h2 class="name-2"></h2>
+                <div class="player-img"> <img src="image/player-2.png" alt=""></div>
+            </div>
+            <div class="weapon">
+                <h2>Point: <span id="life-2"></span></h2>
+                <div class="fruit-2"></div>
+                <h3>Strength: <span class="strength-2"></span></h3>
+                <div class="turn-2"></div>
+                <div class="buttons">
+                    <button class="btn-attack-2">Attack</button>
+                    <button class="btn-defend-2">Block Attack</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="gameOver">
+        <div class="gameOver-content">
+            <h2>GAME OVER!</h2>
+            <p><span id="winner"></span> takes the win!</p>
+            <p>Maybe <span id='looser'></span> wins next time!</p>
+            <h2>Thank you for playing &#128525; &#128525;</h2>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </div>
+</body>
+</html>
